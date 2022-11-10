@@ -15,7 +15,7 @@
 
 * 打开 [https://makecode.microbit.org/](https://makecode.microbit.org/)
 * 点击 **导入**，然后点击 **导入 URL**
-* 粘贴 **https://github.com/dhdjhdj/002** 并点击导入
+* 粘贴 **https://github.com/keyestudio2019/MiniCar** 并点击导入
 
 ## 积木块预览
 
