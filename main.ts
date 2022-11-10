@@ -22,7 +22,7 @@ enum LED_rgb_L_R {
 }
 
 enum LED_color {
-    //% block="rad"
+    //% block="red"
     red1 = 1,
     //% block="green"
     green1 = 2,
@@ -30,8 +30,8 @@ enum LED_color {
     blue1 = 3,
     //% block="cyan"
     cyan = 4,
-    //% block="oxblood red"
-    oxbloodred = 5,
+    //% block="purple"
+    purple = 5,
     //% block="white"
     white = 6,
     //% block="yellow"
@@ -51,11 +51,11 @@ enum pwm_led_l {
 
 enum pwm_led_r {
     //% black="red"
-    pem_red_l = 0x05,
+    pem_red_l = 0x09,
     //% black="green"
     pwm_green_l = 0x0a,
     //% black="blue"
-    pwm_blue_l = 0x09,
+    pwm_blue_l = 0x05,
 }
 
 //% color="#AA278D"
@@ -257,8 +257,8 @@ namespace MiniCar {
 * 0b01 is the sensor on the left
 * 0b10 is the sensor on the right
 */
-    pins.setPull(DigitalPin.P12, PinPullMode.PullNone);
-    pins.setPull(DigitalPin.P13, PinPullMode.PullNone);
+    pins.setPull(DigitalPin.P12, PinPullMode.PullUp);
+    pins.setPull(DigitalPin.P13, PinPullMode.PullUp);
     //% block="Line Tracking"
     //% group="Line Tracking" weight=68
     export function LineTracking(): number {
