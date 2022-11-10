@@ -1,5 +1,5 @@
 
-> 在 [https://github.com/dhdjhdj/002](https://github.com/dhdjhdj/002) 打开此页面
+> 在 [https://github.com/dhdjhdj/002](https://github.com/keyestudio2019/MiniCar) 打开此页面
 
 ## 用作扩展
 
@@ -23,7 +23,7 @@
 此图像显示主分支中最后一次提交的块代码。
 此图像可能需要几分钟才能刷新。
 
-![块的渲染视图](https://github.com/dhdjhdj/MiniCar/back.png)
+
 
 #### 元数据 (用于搜索、渲染)
 
