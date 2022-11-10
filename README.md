@@ -1,6 +1,5 @@
 
-> 在 [https://github.com/dhdjhdj/002](https://github.com/keyestudio2019/MiniCar) 打开此页面
-
+> 在 [https://github.com/keyestudio2019/MiniCar](https://github.com/keyestudio2019/MiniCar)打开此页面
 ## 用作扩展
 
 此仓库可以作为 **插件** 添加到 MakeCode 中。
