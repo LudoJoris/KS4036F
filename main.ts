@@ -10,9 +10,9 @@ enum Motorlist {
 
 enum Direction1 {
     //% block="Forward"
-    Forward = 1,
+    Forward = 0,
     //% block="Backward"
-    Backward = 0
+    Backward = 1
 }
 enum LED_rgb_L_R {
     //% bolck="LED_R"
@@ -68,15 +68,20 @@ namespace MiniCar {
     export function motor(motor: Motorlist, direction: Direction1, pwmvalue: number) {
         switch (motor) {
             case 1: // M1电机控制
-                if (direction) { motor_i2cWrite(0x01, pwmvalue); motor_i2cWrite(0x02, 0); }
-                else { motor_i2cWrite(0x02, pwmvalue); motor_i2cWrite(0x01, 0); }
+                if (direction) { 
+                    motor_i2cWrite(0x01, pwmvalue); motor_i2cWrite(0x02, 0); }
+                else { 
+                    motor_i2cWrite(0x02, pwmvalue); motor_i2cWrite(0x01, 0); }
                 break;
             case 2: // M2电机控制
-                if (direction) { motor_i2cWrite(0x04, pwmvalue); motor_i2cWrite(0x03, 0); }
-                else { motor_i2cWrite(0x03, pwmvalue); motor_i2cWrite(0x04, 0); }
+                if (direction) { 
+                    motor_i2cWrite(0x04, pwmvalue); motor_i2cWrite(0x03, 0); }
+                else { 
+                    motor_i2cWrite(0x03, pwmvalue); motor_i2cWrite(0x04, 0); }
                 break;
         }
     }
+
 
     //% block="LED Show"
     //% group="RGB LED" weight=65
