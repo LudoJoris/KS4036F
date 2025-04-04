@@ -61,7 +61,7 @@ enum pwm_led_r {
 //% color="#AA278D"
 namespace MiniCar {
 
-    //% block="motor = | %motor Direction = | $direction speed = $pwmvalue"
+    //% block="motor = | %motor richting = | $direction snelheid = $pwmvalue"
     //% pwmvalue.min=0 pwmvalue.max=255 
     //% group="Motor" weight=65
     export function motor(motor: Motorlist, direction: Direction1, pwmvalue: number) {
