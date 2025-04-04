@@ -57,18 +57,18 @@ namespace SmartCar {
     //% rood.min=0 rood.max=255
     //% groen.min=0 groen.max=255
     //% blauw.min=0 blauw.max=255
-    //% group="LED" weight=68
     export function my_led_rgb(nr: LED_rgb_L_R, rood: number, groen: number, blauw: number) {
        if (nr == 0) {
            i2c_w(8, rood);
            i2c_w(7, groen);
            i2c_w(6, blauw);
-       };
+       }
        if (nr == 1) {
            i2c_w(9, rood);
            i2c_w(10, groen);
            i2c_w(5, blauw);
-       };
+       }
+    }
 
     //% weight=69
     //% blockId="neopixel_rgb" block="red %red|green %green|blue %blue"
@@ -89,7 +89,6 @@ namespace SmartCar {
     pins.setPull(TRIG_PIN, PinPullMode.PullNone);
     let lastTime = 0;
     //% block="Ultrasonic"
-    //% group="Ultrasonic Sensor" weight=67
     export function ultra(): number {
         //send trig pulse
         pins.digitalWritePin(TRIG_PIN, 0)
@@ -118,13 +117,11 @@ namespace SmartCar {
      * photoresistance sensor
      */
     //% block="LDR_L "
-    //% group="Photoresistance Sensor" weight=66
     export function PH1(): number {
         return pins.analogReadPin(AnalogPin.P1);
     }
 
     //% block="LDR_R "
-    //% group="Photoresistance Sensor" weight=66
     export function PH2(): number {
         return pins.analogReadPin(AnalogPin.P0);
     }
@@ -137,14 +134,12 @@ namespace SmartCar {
     pins.setPull(DigitalPin.P12, PinPullMode.PullUp);
     pins.setPull(DigitalPin.P13, PinPullMode.PullUp);
     //% block="Line Tracking"
-    //% group="Line Tracking" weight=68
     export function LineTracking(): number {
         let val = pins.digitalReadPin(DigitalPin.P12) << 0 | pins.digitalReadPin(DigitalPin.P13) << 1;
         return val;
     }
 
     //% block="set servo to angle %angle"
-    //% group="Servo" weight=69
     //% angle.min=0 angle.max.max=180
     export function setServo(angle: number): void {
         pins.servoWritePin(AnalogPin.P2, angle)
@@ -157,3 +152,4 @@ function i2c_w(reg: number, value: number) {
     buf[1] = value
     pins.i2cWriteBuffer(i2c_address, buf)
 }
+
