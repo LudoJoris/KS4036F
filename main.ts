@@ -52,22 +52,22 @@ namespace SmartCar {
     }
 
 
-    //% block="led = |%nr rood = |$r groen = |$g blauw = |$b"
+    //% block="led = |%nr rood = |$rood groen = |$groen blauw = |$blauw"
     //% direction.shadow=timePicker
-    //% r.min=0 r.max=255
-    //% g.min=0 g.max=255
-    //% b.min=0 b.max=255
+    //% rood.min=0 rood.max=255
+    //% groen.min=0 groen.max=255
+    //% blauw.min=0 blauw.max=255
     //% group="LED" weight=68
-    export function my_led_rgb(nr: LED_rgb_L_R, r: number, g: number, b: number) {
+    export function my_led_rgb(nr: LED_rgb_L_R, rood: number, groen: number, blauw: number) {
        if (nr == 0) {
-           i2c_w(8, r);
-           i2c_w(7, g);
-           i2c_w(6, b);
+           i2c_w(8, rood);
+           i2c_w(7, groen);
+           i2c_w(6, blauw);
        };
        if (nr == 1) {
-           i2c_w(9, r);
-           i2c_w(10, g);
-           i2c_w(5, b);
+           i2c_w(9, rood);
+           i2c_w(10, groen);
+           i2c_w(5, blauw);
        };
 
     /**
