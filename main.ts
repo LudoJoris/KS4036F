@@ -52,7 +52,7 @@ namespace SmartCar {
     }
 
 
-    //% block="led = |$nr rood = |$r groen = |$g blauw = |$b"
+    //% block="led = |%nr rood = |$r groen = |$g blauw = |$b"
     //% direction.shadow=timePicker
     //% r.min=0 r.max=255
     //% g.min=0 g.max=255
