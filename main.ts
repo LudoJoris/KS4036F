@@ -2,9 +2,9 @@
 let address = 0x30
 
 enum Motorlist {
-    //% block="A"
+    //% block="links"
     M1 = 1,
-    //% block="B"
+    //% block="rechts"
     M2 = 2
 }
 
@@ -15,9 +15,9 @@ enum Direction1 {
     Backward = 1
 }
 enum LED_rgb_L_R {
-    //% bolck="LED_R"
+    //% block="LED_R"
     LED_R = 1,
-    //% bolck="LED_L"
+    //% block="LED_L"
     LED_L = 0,
 }
 
