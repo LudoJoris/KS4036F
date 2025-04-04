@@ -9,9 +9,9 @@ enum Motorlist {
 }
 
 enum Direction1 {
-    //% block="Forward"
+    //% block="vooruit"
     Forward = 0,
-    //% block="Backward"
+    //% block="achteruit"
     Backward = 1
 }
 enum LED_rgb_L_R {
