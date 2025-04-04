@@ -51,7 +51,7 @@ namespace SmartCar {
         }
     }
 
-
+/**
     //% block="led = |%nr rood = |$rood groen = |$groen blauw = |$blauw"
     //% direction.shadow=timePicker
     //% rood.min=0 rood.max=255
@@ -80,10 +80,10 @@ namespace SmartCar {
     function packRGB(a: number, b: number, c: number): number {
         return ((a & 0xFF) << 16) | ((b & 0xFF) << 8) | (c & 0xFF);
     }
-
+¨/
     /**
     * Ultrasonic sensor
-    */
+    
     const TRIG_PIN = DigitalPin.P14;
     const ECHO_PIN = DigitalPin.P15;
     pins.setPull(TRIG_PIN, PinPullMode.PullNone);
@@ -115,7 +115,7 @@ namespace SmartCar {
 
     /**
      * photoresistance sensor
-     */
+     
     //% block="LDR_L "
     export function PH1(): number {
         return pins.analogReadPin(AnalogPin.P1);
@@ -130,7 +130,7 @@ namespace SmartCar {
 * return 0b01 or 0b10
 * 0b01 is the sensor on the left
 * 0b10 is the sensor on the right
-*/
+
     pins.setPull(DigitalPin.P12, PinPullMode.PullUp);
     pins.setPull(DigitalPin.P13, PinPullMode.PullUp);
     //% block="Line Tracking"
@@ -144,6 +144,7 @@ namespace SmartCar {
     export function setServo(angle: number): void {
         pins.servoWritePin(AnalogPin.P2, angle)
     }
+*/
 }
 
 function i2c_w(reg: number, value: number) {
