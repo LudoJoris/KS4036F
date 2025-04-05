@@ -1,6 +1,6 @@
 > Open deze pagina op [https://github.com/LudoJoris/KS4036F](https://github.com/LudoJoris/KS4036F)
 
-## Gebruik als MakeCode uitbreiding
+#### Gebruik als MakeCode uitbreiding
 
 Deze repository kan als **uitbreiding** aan MakeCode worden toegevoegd.
 
@@ -9,7 +9,7 @@ Deze repository kan als **uitbreiding** aan MakeCode worden toegevoegd.
 * Klik op **Uitbreidingen** onder het tandwielpictogrammenu
 * Zoek naar **https://github.com/LudoJoris/KS4036F** en importeer
 
-## Bewerk deze repository in MakeCode.
+#### Bewerk deze repository in MakeCode.
 
 * Open [https://makecode.microbit.org/](https://makecode.microbit.org/)
 * Klik op **Importeren** en klik vervolgens op **URL importeren**
