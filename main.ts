@@ -58,11 +58,10 @@ namespace SmartCar {
 	if (motor == 0) {
 	    i2c_w(0x01, 0);
 	    i2c_w(0x02, 0);
-	    break;
+	}
 	if (motor == 1) {
 	    i2c_w(0x03, 0);
 	    i2c_w(0x04, 0);
-	    break;
         }
     }
 
@@ -79,6 +78,18 @@ namespace SmartCar {
 
 function packRGB(r: number, g: number, b: number): number {
     return ((r & 0xFF) << 16) | ((g & 0xFF) << 8) | (b & 0xFF);
+}
+function unpackR(rgb: number): number {
+    let r = (rgb >> 16) & 0xFF;
+    return r;
+}
+function unpackG(rgb: number): number {
+    let g = (rgb >> 8) & 0xFF;
+    return g;
+}
+function unpackB(rgb: number): number {
+    let b = (rgb) & 0xFF;
+    return b;
 }
 
 function i2c_w(reg: number, value: number) {
