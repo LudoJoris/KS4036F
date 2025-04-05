@@ -1,12 +1,13 @@
-> Open deze pagina op [https://github.com/keyestudio2019/MiniCar](https://github.com/keyestudio2019/MiniCar)
-## Gebruikt als een extensie
+> Open deze pagina op [https://github.com/LudoJoris/KS4036F](https://github.com/LudoJoris/KS4036F)
+> 
+## Gebruik als uitbreiding
 
-Deze repository kan als **plugin** aan MakeCode worden toegevoegd.
+Deze repository kan als **uitbreiding** aan MakeCode worden toegevoegd.
 
 * Open [https://makecode.microbit.org/](https://makecode.microbit.org/)
 * Klik op **Nieuw project**
-* Klik op **Extensies** onder het tandwielpictogrammenu
-* Zoek naar **https://github.com/keyestudio2019/MiniCar** en importeer
+* Klik op **Uitbreidingen** onder het tandwielpictogrammenu
+* Zoek naar **https://github.com/LudoJoris/KS4036F** en importeer
 
 ## Bewerk dit project ![Build status badge](https://github.com/mworkfun/pxt-k-bit/workflows/MakeCode/badge.svg)
 
@@ -14,7 +15,7 @@ Bewerk deze repository in MakeCode.
 
 * Open [https://makecode.microbit.org/](https://makecode.microbit.org/)
 * Klik op **Importeren** en klik vervolgens op **URL importeren**
-* Plak **https://github.com/keyestudio2019/MiniCar** en klik op Importeren
+* Plak **https://github.com/LudoJoris/KS4036F** en klik op Importeren
 
 ## Blokvoorbeeld
 
@@ -30,12 +31,12 @@ Het kan enkele minuten duren voordat deze afbeelding wordt vernieuwd.
 
 #### handleidingen
 
-IR-ontvanger gebruikt P16
+IR-ontvanger gebruikt pin 16
 
-Ultrasoon gebruikt P14 (Trig) en P15 (Echo)
+Ultrasone sensor gebruikt pin 14 (Trig) en pin 15 (Echo)
 
-linker fotoresistentie gebruikt P1
-juiste fotoresistentie gebruikt P0
+Linkse fotosensor gebruikt pin 1
+rechtse fotosensor gebruikt pin 0
 
-linker controlelijnsensor gebruikt P12
-rechter controlelijnsensor gebruikt P13
+Linkse IR lijnsensor gebruikt pin 12
+Rechtse IR lijnsensor gebruikt pin 13
