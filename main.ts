@@ -14,7 +14,7 @@ enum Richting {
   D1 = 1
 }
 
-enum LED_rgb_L_R {
+enum LED {
   //% block="links"
   L0 = 0,
   //% block="rechts"
@@ -26,7 +26,7 @@ namespace SmartCar {
 
   //% block="motor = | $motor richting = | $richting snelheid = $snelheid"
   //% snelheid.min=0 snelheid.max=255 snelheid.defl=100
-  //% group="Motor" weight=65
+  //% group="Motor" weight=50
   export function motor(motor: Motor, richting: Richting, snelheid: number) {
     if (motor == 0) {
       if (richting == 0) { 
@@ -63,13 +63,31 @@ namespace SmartCar {
     }
   }
 
-  //% weight=10
   //% block="rood $red|groen $green|blauw $blue"
   //% red.min=0 red.max=255
   //% green.min=0 green.max=255
   //% blue.min=0 blue.max=255
+  //% group="LED" weight=60
   export function rgb(red: number, green: number, blue: number): number {
     return packRGB(red, green, blue);
+  }
+
+  //% block="LED = | $LED kleur = $rgb" 
+  export function set_led(led: LED, rgb: number) {
+    let r = 255 - unpackR(rgb);
+    let g = 255 - unpackG(rgb);
+    let b = 255 - unpackB(rgb);
+
+    if (led == 0) {
+      i2c_w(0x09, r);
+      i2c_w(0x0a, g);
+      i2c_w(0x05, b);
+    }
+    if (led == 1) {
+      i2c_w(0x08, r);
+      i2c_w(0x07, g);
+      i2c_w(0x06, b);
+    }
   }
 
 }
