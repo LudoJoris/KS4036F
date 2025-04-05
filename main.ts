@@ -52,6 +52,20 @@ namespace SmartCar {
         }
     }
 
+    //% block="motor = | $motor stop"
+    //% group="Motor" weight=66
+    export function stop(motor: Motorlist) {
+	if (motor == 0) {
+	    i2c_w(0x01, 0);
+	    i2c_w(0x02, 0);
+	    break;
+	if (motor == 1) {
+	    i2c_w(0x03, 0);
+	    i2c_w(0x04, 0);
+	    break;
+        }
+    }
+
     //% weight=10
     //% block="rood $red|groen $green|blauw $blue"
     //% red.min=0 red.max=255
