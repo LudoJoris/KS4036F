@@ -51,15 +51,17 @@ namespace SmartCar {
                 break;
         }
     }
+
     //% weight=10
     //% block="red %red|green %green|blue %blue"
-    export function rgb(red: number, green: number, blue: number): number {
-        return packRGB(red, green, blue);
+    export function rgb(rood: number, groen: number, blauw: number): number {
+        return packRGB(rood, groen, blauw);
     }
+
 }
 
-function packRGB(a: number, b: number, c: number): number {
-    return ((a & 0xFF) << 16) | ((b & 0xFF) << 8) | (c & 0xFF);
+function packRGB(r: number, g: number, b: number): number {
+    return ((r & 0xFF) << 16) | ((g & 0xFF) << 8) | (b & 0xFF);
 }
 
 function i2c_w(reg: number, value: number) {
