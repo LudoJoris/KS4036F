@@ -1,7 +1,7 @@
 {
-    "name": "Mini Car",
+    "name": "Smart Car",
     "version": "0.0.0",
-    "description": "KEYESTUDIO Microbit Smart Robot Car with Building Blocks",
+    "description": "KS4036F micro:bit Smart Robot Car",
     "dependencies": {
         "core": "*",
         "pxt-ir-remote": "github:mworkfun/pxt-ir-remote#c10e5f2cfb043511430dbefb1b56a02f9e7ed175",
@@ -18,5 +18,5 @@
     "supportedTargets": [
         "microbit"
     ],
-    "preferredEditor": "tsprj"
+    "preferredEditor": "me"
 }
