@@ -53,9 +53,12 @@ namespace SmartCar {
     }
 
     //% weight=10
-    //% block="red %red|green %green|blue %blue"
-    export function rgb(rood: number, groen: number, blauw: number): number {
-        return packRGB(rood, groen, blauw);
+    //% block="rood %red|groen %green|blauw %blue"
+    //% red.min=0 red.max=255
+    //% green.min=0 green.max=255
+    //% blue.min=0 blue.max=255
+    export function rgb(red: number, green: number, blue: number): number {
+        return packRGB(red, green, blue);
     }
 
 }
