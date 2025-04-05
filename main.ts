@@ -24,7 +24,7 @@ enum LED_rgb_L_R {
 //% color="#AA278D"
 namespace SmartCar {
 
-    //% block="motor = | %motor richting = | %richting snelheid = $snelheid"
+    //% block="motor = | $motor richting = | $richting snelheid = $snelheid"
     //% snelheid.min=0 snelheid.max=255 snelheid.defl=100
     //% group="Motor" weight=65
     export function motor(motor: Motorlist, richting: Richting, snelheid: number) {
@@ -53,7 +53,7 @@ namespace SmartCar {
     }
 
     //% weight=10
-    //% block="rood %red|groen %green|blauw %blue"
+    //% block="rood $red|groen $green|blauw $blue"
     //% red.min=0 red.max=255
     //% green.min=0 green.max=255
     //% blue.min=0 blue.max=255
