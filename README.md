@@ -22,9 +22,9 @@ Deze repository kan als **uitbreiding** aan MakeCode worden toegevoegd.
 
 #### Handleiding
 
-* IR-ontvanger gebruikt pin 16
-* Ultrasone sensor gebruikt pin 14 (Trig) en pin 15 (Echo)
-* Linkse fotosensor gebruikt pin 1
-* Rechtse fotosensor gebruikt pin 0
-* Linkse IR lijnsensor gebruikt pin 12
-* Rechtse IR lijnsensor gebruikt pin 13
+* IR-ontvanger gebruikt micro:bit pin 16
+* Ultrasone sensor gebruikt micro:bit pin 14 (Trig) en micro:bit pin 15 (Echo)
+* Linkse fotosensor gebruikt micro:bit pin 1
+* Rechtse fotosensor gebruikt micro:bit pin 0
+* Linkse IR lijnsensor gebruikt micro:bit pin 12
+* Rechtse IR lijnsensor gebruikt micro:bit pin 13
